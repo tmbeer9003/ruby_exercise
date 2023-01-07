@@ -1,0 +1,15 @@
+# トリボナッチ数列
+
+def tribonacci(num)
+  if num == 0
+    return 1
+  elsif num == 1
+    return 3
+  elsif num == 2
+    return 7
+  else
+    tribonacci(num-3) + tribonacci(num-2) + tribonacci(num-1)
+  end
+end
+
+puts tribonacci(50)

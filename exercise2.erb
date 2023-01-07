@@ -1,0 +1,20 @@
+# 50の約数を全て表示
+
+for i in 1..50 do
+  if 50 % i == 0
+    puts i
+  end
+end
+
+
+# 50の約数を数える
+
+counts = 0
+
+for i in 1..50 do
+  if 50 % i == 0
+    counts = counts + 1
+  end
+end
+
+puts "約数は#{counts}個です"

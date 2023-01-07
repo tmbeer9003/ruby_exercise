@@ -1,0 +1,18 @@
+# トリボナッチ数列
+
+a = 1
+b = 3
+c = 7
+d = a + b + c
+
+i = 4
+
+while i < 51 do
+  d = a + b + c
+  a = b
+  b = c
+  c = d
+  i += 1
+end
+
+puts d

@@ -1,0 +1,9 @@
+# 7から7777777までの7の倍数を全て書き出した時、7が出てくる回数
+
+counts = 0
+
+for i in 1..1111111 do
+  num = i*7
+  counts = counts + num.to_s.count('7').to_i
+end
+puts counts
